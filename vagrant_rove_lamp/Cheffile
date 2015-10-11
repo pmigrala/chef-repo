@@ -1,0 +1,14 @@
+# encoding: utf-8
+
+site 'http://community.opscode.com/api/v1'
+
+# cookbook "apt"
+cookbook "yum"
+cookbook "build-essential", {}
+cookbook "rvm", {:github=>"fnichol/chef-rvm", :ref=>"v0.9.0"}
+cookbook "python", {}
+cookbook "git", {}
+cookbook "mysql", {}
+cookbook "apache2", {}
+cookbook "vim", {}
+cookbook "php", {}
