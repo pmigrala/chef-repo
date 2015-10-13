@@ -10,6 +10,5 @@
 # subversion
 */.svn/*
 
-# unused ubuntu vagrant and cheffile files
+# a backup ubuntu vagrant file 
 vagrant.ubuntu
-Cheffile.ubuntu
