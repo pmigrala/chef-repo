@@ -24,7 +24,7 @@ Vagrant.configure("2") do |config|
     chef.add_recipe 'git'
     # chef.add_recipe 'mysql::server'
     # chef.add_recipe 'apache2'
-    chef.add_recipe 'httpd'
+    # chef.add_recipe 'httpd'
     chef.add_recipe 'vim'
     chef.add_recipe 'php'
     chef.json = {
@@ -49,15 +49,15 @@ Vagrant.configure("2") do |config|
       },
       :apache => {
         :default_site_enabled => "true",
-        :dir                  => "/etc/apache2",
-        :log_dir              => "/var/log/apache2",
+        :dir                  => "/etc/httpd",
+        :log_dir              => "/var/log/httpd",
         :error_log            => "error.log",
         :user                 => "www-data",
         :group                => "www-data",
-        :binary               => "/usr/sbin/apache2",
-        :cache_dir            => "/var/cache/apache2",
-        :pid_file             => "/var/run/apache2.pid",
-        :lib_dir              => "/usr/lib/apache2",
+        :binary               => "/usr/sbin/httpd",
+        :cache_dir            => "/var/cache/httpd",
+        :pid_file             => "/var/run/httpd.pid",
+        :lib_dir              => "/usr/lib64/httpd",
         :listen_ports         => [
           "80"
         ],
