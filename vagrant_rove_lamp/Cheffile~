@@ -9,6 +9,6 @@ cookbook "rvm", {:github=>"fnichol/chef-rvm", :ref=>"v0.9.0"}
 cookbook "python", {}
 cookbook "git", {}
 cookbook "mysql", {}
-cookbook "apache2", {}
+cookbook "httpd", {}
 cookbook "vim", {}
 cookbook "php", {}

@@ -12,3 +12,4 @@ cookbook "mysql", {}
 cookbook "httpd", {}
 cookbook "vim", {}
 cookbook "php", {}
+cookbook "perl", {}
